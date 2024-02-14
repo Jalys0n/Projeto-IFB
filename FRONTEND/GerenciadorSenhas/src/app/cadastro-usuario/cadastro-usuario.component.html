@@ -1,0 +1,63 @@
+<header class="header">
+    <div class="divHeader">
+        
+        <div class="divimgLogo">
+            <img src="../assets/img/header/logobsb.jpg" alt="" class="mt-2 imgLogo">
+        </div>
+
+        <div class="ptexto">
+            <div class="p">
+                <p class="text-center mt-2">SEJAM BEM-VINDOS AO REGISTRO ACADÊMICO</p>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+
+<div class="formulario">
+        <div class="divimgCelular"><img src="../assets/img/formulario/ImagemCelular.png" alt="" class="imgCelular"></div>
+
+        <div class="formcampo">
+                    <form (ngSubmit)="cadastrarUsuario()" #cadastroForm="ngForm" class="mb-3">
+
+
+                        <label for="nomeUsuario" class="form-label">Nome:</label>
+                        <input type="text" name="nomeUsuario" autocomplete="off" [(ngModel)]="nomeUsuario" id="nomeUsuario" class="form-control Input" placeholder="Digite seu nome"> 
+                    
+
+                        <label for="cpfUsuario" class="form-label">CPF: </label>
+                        <input type="number" name="cpf" [(ngModel)]="cpf" autocomplete="off" id="cpf" placeholder="Digite seu CPF" class="form-control Input"/>
+
+
+                        <label for="assuntoAtendimento" class="form-label">Assunto: </label>
+                        <select id="assuntoAtendimento" class="form-select Input" name="assuntoAtendimento" [(ngModel)]="assunto">
+                          <option value=""></option>
+                          <option *ngFor="let assunto of assuntos" [value]="assunto.value">{{ assunto.label }}</option>
+                        </select>
+                        
+                        <label for="tipoUsuario" class="form-label">Tipo de Usuário: </label>
+                        <select id="tipoUsuario" class="form-select Input" name="tipoUsuario" [(ngModel)]="comunidade">
+                          <option value=""></option>
+                          <option *ngFor="let tipoUsuario of tiposUsuarios" [value]="tipoUsuario.value">{{ tipoUsuario.label }}</option>
+                        </select>        
+
+
+                    <label for="NecessidadePreferencia" class="form-label Input">Preferência de acordo com a lei?</label>
+                    <div class="prioridade">
+                                    <div class="preferenciasim">
+                                        <label for="preferenciasim">Sim</label>
+                                        <input type="radio" id="preferenciasim" name="preferencia" value="preferenciasim" [(ngModel)]="preferencia">
+                                    </div>
+                                    
+                                    <div class="preferencianao">
+                                        <label for="preferencianao">Não</label>
+                                        <input type="radio" id="preferencianao" name="preferencia" value="preferencianao" [(ngModel)]="preferencia">
+                                    </div>
+                    </div>
+
+                    <button type="submit" class="botao">GERAR</button>
+                    </form>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.container{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(233, 132, 73, 0.2);
+    border-radius: 15px;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.caixa-senha{
+    background-color: #f3dacb;
+    width: 80%;
+    height: 90%;
+    margin-top: 50px;
+    text-align: center;
+    border: solid 1px brown;
+    border-radius: 15px;
+    
+}
+.senha-chamada{
+    width: 70%;
+    height: 65%;
+    border: solid 1px black;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: solid 1px white;
+    border-radius: 15px;
+}
+.senha-chamada p{
+    font-size: 50px;
+    color: black;
+    font: 50px 'Roboto', sans-serif;
+}
+
+.container-senhas-anteriores{
+    width: 100%;
+    display: flex;
+    height: 170px;
+}
+.box{
+    width: 70%;
+}
+.senhas-anteriores{
+    width: 30%;
+}
+.senhas-anteriores p {
+    text-align: left;
+    font: 1.6em 'Roboto', sans-serif;
+}

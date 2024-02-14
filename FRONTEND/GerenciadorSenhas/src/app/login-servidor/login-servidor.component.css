@@ -1,0 +1,111 @@
+.header{
+    background-color: #69CE64;
+    height: 180px;
+    border-radius: 45px;
+    margin-bottom: 20px;
+   
+}
+.divHeader{
+    border-bottom: solid 2px white;
+    display: flex;
+    justify-content: center;
+}
+.divimgLogo{width: 50%;
+    text-align: center;
+}
+
+.imgLogo{
+    border-radius: 25px;
+    width: 400px;
+}
+
+.ptexto{
+    font: 2.5em 'Inter', sans-serif;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+}
+.p{
+    width: 80%;
+}
+
+
+.formulario{
+    background-color: rgba(233, 132, 73, 0.2);
+    width: 100%; 
+    height: 500px;   
+    border-radius: 45px;
+    display: flex;
+}
+.divimgCelular{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.imgCelular{
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;}
+
+.formcampo{
+        width: 50%;
+    }
+.Input{
+    width: 50%;
+    margin-bottom: 15px;
+}
+.botao{
+    color: black;
+    border-radius: 13px;
+    height: 42px;
+    width: 90px;
+    background-color:#E98449;
+    margin-left: 100px;
+    border: solid 1px white;
+}
+
+/*responsividade:*/
+
+@media (max-width: 1176px) {
+    .imgLogo{width: 330px;}
+    .ptexto{ font-size: 1.8em;}
+}
+
+@media (max-width: 848px) {
+    .Input{width: 70%;}
+}
+@media (max-width: 808px) {
+    .imgCelular{width: 300px; height: 300px;}
+}
+@media (max-width: 683px) {
+    .imgLogo{width: 250px;}
+    .ptexto{ font-size: 1.5em;}
+    .imgCelular{width: 300px; height: 300px;}
+}
+@media (max-width: 625px) {
+    .formulario{
+        height: auto;
+        display: block;
+    }
+    .divimgCelular{
+        width: 100%;
+    }
+    .imgCelular{width: 200px; height: 180px;
+    }
+    .formcampo{
+    width: 100%;
+    }
+    form{width: 50%; margin: 0 auto;}
+    .Input{width: 90%;}
+.botao{width: 100px; height: 42px; margin-left: 80px;}
+}
+
+@media(max-width:485px){
+    .divHeader{display: block;}
+    .divimgLogo{width: 100%;}
+    .ptexto, .p{
+        width: 100%; font-size: 1em; font-weight: bold;
+    }
+    .botao{margin-left: 20px; margin-bottom: 20px;}
+}
+

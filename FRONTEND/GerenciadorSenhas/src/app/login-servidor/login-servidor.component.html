@@ -1,0 +1,41 @@
+<header class="header">
+    <div class="divHeader">
+        
+        <div class="divimgLogo">
+            <img src="../assets/img/header/logobsb.jpg" alt="" class="mt-2 imgLogo">
+        </div>
+
+        <div class="ptexto">
+            <div class="p">
+                <p class="text-center mt-2">SEJAM BEM-VINDOS AO REGISTRO ACADÊMICO</p>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+
+<div class="formulario">
+        <div class="divimgCelular"><img src="../assets/img/formulario/ImagemCelular.png" alt="" class="imgCelular"></div>
+
+        <div class="formcampo">
+            <form (ngSubmit)="onSubmit(cpfServidor.value, senhaServidor.value, guicheServidor.value)">
+                <label for="cpfServidor" class="form-label">CPF:</label>
+                <input type="text" name="cpfServidor" class="form-control Input" #cpfServidor>
+              
+                <label for="senhaServidor" class="form-label">Senha:</label>
+                <input type="password" class="form-control Input" #senhaServidor>
+              
+                <label for="guicheServidor" class="form-label">Guichê:</label>
+                <select name="guicheServidor" id="guicheServidor" class="form-select Input" #guicheServidor>
+                  <option value=""></option>
+                  <option value="guiche1">Guichê 1</option>
+                  <option value="guiche2">Guichê 2</option>
+                  <option value="guiche3">Guichê 3</option>
+                </select>
+                <button class="botao" type="submit">ENTRAR</button>
+              </form>
+              
+    </div>
+</div>
